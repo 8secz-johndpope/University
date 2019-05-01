@@ -1,0 +1,18 @@
+
+target 'UniversityApp' do
+  
+  use_frameworks!
+	pod 'Hero'
+    pod 'Fabric'
+    pod 'Crashlytics'
+    pod 'Firebase/Core'
+    pod 'Firebase/Firestore'
+    pod 'Firebase/Storage' 
+    pod 'Kingfisher'
+    pod 'VK-ios-sdk'
+    pod 'Alamofire'
+    pod 'SwiftyJSON'
+    pod 'ObjectMapper'
+    pod 'Firebase/Auth'
+    pod 'FirebaseUI/Storage'
+end

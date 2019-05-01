@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="xCe-jp-1hT">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Main Tab Bar View Controller-->
+        <scene sceneID="vK2-Nx-Lt9">
+            <objects>
+                <tabBarController id="xCe-jp-1hT" customClass="MainTabBarViewController" customModule="UniversityApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="UZZ-jo-pdh" propertyAccessControl="none">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="GH0-v7-3As" kind="relationship" relationship="viewControllers" id="Fu5-gH-kP7"/>
+                        <segue destination="bV4-fj-WlD" kind="relationship" relationship="viewControllers" id="7f2-Y8-jxd"/>
+                        <segue destination="med-hn-fiC" kind="relationship" relationship="viewControllers" id="eGg-wV-hsv"/>
+                        <segue destination="02h-Rx-FGz" kind="relationship" relationship="viewControllers" id="n64-Xs-JQ1"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="11Y-wv-nWV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-164" y="-725"/>
+        </scene>
+        <!--Расписание-->
+        <scene sceneID="IjC-Lc-7xt">
+            <objects>
+                <viewController id="bV4-fj-WlD" customClass="NewsViewController" customModule="UniversityApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="AUs-Vd-BwM">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="J1J-p4-6Tq"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" selectedImage="feed" id="17t-57-ycz"/>
+                    <navigationItem key="navigationItem" title="Расписание" id="EEJ-kK-6Od"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NEO-kN-Nif" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-679" y="104"/>
+        </scene>
+        <!--Профиль-->
+        <scene sceneID="6Qu-dI-0Zt">
+            <objects>
+                <viewController id="02h-Rx-FGz" customClass="ProfileViewController" customModule="UniversityApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Rtt-YF-VfH">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="acO-cw-5RM"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Профиль" image="healthProfileAvatar" selectedImage="healthProfileAvatar" id="0t6-C2-gqe"/>
+                    <navigationItem key="navigationItem" title="Профиль" id="vKq-It-kAd"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WFJ-Wq-8yt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="996" y="104"/>
+        </scene>
+        <!--Рейтинг-->
+        <scene sceneID="jeA-wn-1iV">
+            <objects>
+                <viewController id="med-hn-fiC" customClass="RatingViewController" customModule="UniversityApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="K31-tP-mrz">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="yyg-9c-0cF"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Рейтинг" image="star" selectedImage="star" id="lev-NP-VoY"/>
+                    <navigationItem key="navigationItem" title="Рейтинг" id="x7N-CT-I9F"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6lo-Xs-jOW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="129" y="104"/>
+        </scene>
+        <!--Новости-->
+        <scene sceneID="AQR-RJ-fav">
+            <objects>
+                <viewController id="GH0-v7-3As" customClass="DiaryViewController" customModule="UniversityApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="UnX-wU-nrr">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="ewa-eL-Rsy"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Расписание" selectedImage="icTodayBlack24Px" id="mRZ-dG-m6g"/>
+                    <navigationItem key="navigationItem" title="Новости" id="BM2-QJ-ZML"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cgw-iM-Lg5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1586" y="104"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="feed" width="22" height="26"/>
+        <image name="healthProfileAvatar" width="26" height="26"/>
+        <image name="icTodayBlack24Px" width="24" height="26"/>
+        <image name="star" width="28" height="27"/>
+    </resources>
+</document>

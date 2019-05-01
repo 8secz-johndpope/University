@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="309" id="KGk-i7-Jjw" customClass="MissTableViewCell" customModule="UniversityApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="309"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="308.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="🙁" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oeo-fl-7WV">
+                        <rect key="frame" x="134" y="93" width="52" height="58"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="52" id="CTI-aW-2fd"/>
+                            <constraint firstAttribute="height" constant="58" id="KRs-V7-Ozy"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="48"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Нет данных для отображения" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T6R-nl-6bg">
+                        <rect key="frame" x="125" y="161" width="70" height="101.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.10980392156862745" green="0.10980392156862745" blue="0.10980392156862745" alpha="0.54000000000000004" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="oeo-fl-7WV" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="134" id="QIT-le-QPM"/>
+                    <constraint firstItem="oeo-fl-7WV" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="93" id="Uvx-Oh-PKs"/>
+                    <constraint firstItem="T6R-nl-6bg" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="125" id="dEJ-Sa-HWx"/>
+                    <constraint firstAttribute="trailing" secondItem="T6R-nl-6bg" secondAttribute="trailing" constant="125" id="dUw-o0-w47"/>
+                    <constraint firstItem="T6R-nl-6bg" firstAttribute="top" secondItem="oeo-fl-7WV" secondAttribute="bottom" constant="10" id="mmH-6a-eAA"/>
+                    <constraint firstAttribute="trailing" secondItem="oeo-fl-7WV" secondAttribute="trailing" constant="134" id="wRC-tP-XbM"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <point key="canvasLocation" x="34" y="223.5"/>
+        </tableViewCell>
+    </objects>
+</document>

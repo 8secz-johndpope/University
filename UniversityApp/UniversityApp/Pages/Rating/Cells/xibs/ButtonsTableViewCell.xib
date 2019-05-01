@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ButtonsTableViewCell" rowHeight="55" id="KGk-i7-Jjw" customClass="ButtonsTableViewCell" customModule="UniversityApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="419" height="55"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="419" height="54.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xfe-Cb-sRm">
+                        <rect key="frame" x="20" y="0.0" width="92" height="55"/>
+                        <color key="backgroundColor" red="1" green="0.34901960784313724" blue="0.39215686274509803" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="92" id="N4d-92-YNc"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                        <state key="normal" title="l">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </state>
+                        <connections>
+                            <action selector="btn1:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="q3W-XN-UVB"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ren-EZ-aVb">
+                        <rect key="frame" x="127" y="0.0" width="92" height="54.5"/>
+                        <color key="backgroundColor" red="0.94901960784313721" green="0.94901960784313721" blue="0.94901960784313721" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="92" id="XfK-M8-tEw"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                        <state key="normal" title="ll">
+                            <color key="titleColor" red="0.10980392160000001" green="0.10980392160000001" blue="0.10980392160000001" alpha="0.38" colorSpace="calibratedRGB"/>
+                        </state>
+                        <connections>
+                            <action selector="btn2:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="H65-cB-YaV"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Xfe-Cb-sRm" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="CIq-84-kWx"/>
+                    <constraint firstAttribute="bottom" secondItem="Xfe-Cb-sRm" secondAttribute="bottom" constant="-0.5" id="DpI-fa-dWp"/>
+                    <constraint firstAttribute="bottom" secondItem="Ren-EZ-aVb" secondAttribute="bottom" id="P5U-Qr-jt0"/>
+                    <constraint firstItem="Xfe-Cb-sRm" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="kip-K5-x1Z"/>
+                    <constraint firstItem="Ren-EZ-aVb" firstAttribute="leading" secondItem="Xfe-Cb-sRm" secondAttribute="trailing" constant="15" id="qKR-sX-40i"/>
+                    <constraint firstItem="Ren-EZ-aVb" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="vw9-ZU-bCM"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="btn1" destination="Xfe-Cb-sRm" id="JFB-nB-dey"/>
+                <outlet property="btn2" destination="Ren-EZ-aVb" id="CMY-yJ-jTL"/>
+            </connections>
+            <point key="canvasLocation" x="-186.5" y="59.5"/>
+        </tableViewCell>
+    </objects>
+</document>

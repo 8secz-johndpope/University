@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="0iy-3s-m6X">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Entrance View Controller-->
+        <scene sceneID="NIu-wx-2bS">
+            <objects>
+                <viewController storyboardIdentifier="EntranceViewController" id="djR-5w-gPi" customClass="EntranceViewController" customModule="UniversityApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fFV-h9-Ayj">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image-university" translatesAutoresizingMaskIntoConstraints="NO" id="f0G-Y4-ate">
+                                <rect key="frame" x="94.5" y="297" width="186" height="137"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="186" id="QBi-27-b9b"/>
+                                    <constraint firstAttribute="height" constant="137" id="TT9-M9-6qK"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i1B-4g-igA">
+                                <rect key="frame" x="15" y="587" width="345" height="50"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="dhF-To-rYJ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="19" maxX="15" maxY="18"/>
+                                <state key="normal" title="Продолжить с ВКонтакте" image="entrance-vk">
+                                    <color key="titleColor" red="0.20784313730000001" green="0.65490196079999996" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="Entrance:" destination="djR-5w-gPi" eventType="touchUpInside" id="bac-aK-2pv"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.20784313730000001" green="0.65490196079999996" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="UH6-Ea-ZtJ" firstAttribute="bottom" secondItem="i1B-4g-igA" secondAttribute="bottom" constant="30" id="CBn-HI-f6J"/>
+                            <constraint firstItem="UH6-Ea-ZtJ" firstAttribute="trailing" secondItem="i1B-4g-igA" secondAttribute="trailing" constant="15" id="Hx2-zS-FeW"/>
+                            <constraint firstItem="i1B-4g-igA" firstAttribute="leading" secondItem="UH6-Ea-ZtJ" secondAttribute="leading" constant="15" id="meH-UT-TTt"/>
+                            <constraint firstItem="f0G-Y4-ate" firstAttribute="centerX" secondItem="UH6-Ea-ZtJ" secondAttribute="centerX" id="q6g-C5-WBu"/>
+                            <constraint firstItem="f0G-Y4-ate" firstAttribute="centerY" secondItem="UH6-Ea-ZtJ" secondAttribute="centerY" id="teI-8x-7hm"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="UH6-Ea-ZtJ"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="s2P-7x-ZgJ"/>
+                    <connections>
+                        <outlet property="entranceBtn" destination="i1B-4g-igA" id="wJ7-SD-sV2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LAU-fa-OaZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-156" y="11"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="F3d-dd-Ty7">
+            <objects>
+                <navigationController id="0iy-3s-m6X" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="29T-so-rD0">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="djR-5w-gPi" kind="relationship" relationship="rootViewController" id="yRG-Ug-CRc"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gW9-Wy-Mo3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-985" y="12"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="entrance-vk" width="22" height="13"/>
+        <image name="image-university" width="186" height="131"/>
+    </resources>
+</document>
